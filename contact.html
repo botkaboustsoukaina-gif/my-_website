@@ -1,110 +1,54 @@
 <!DOCTYPE html>
-<!-- Langue définie en français -->
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Titre de la page Contact -->
-  <title>ZoneSport - Contact</title>
-  <!-- Lien vers le fichier CSS externe unique -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoneSport - Contact</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-  <!-- ==============================
-       HEADER — En-tête commun
-       ============================== -->
-  <header>
-    <h1>ZoneSport</h1>
-    <p>Votre boutique de sport en ligne</p>
-  </header>
+    <header>
+        <h1>ZoneSport</h1>
+        <p>Votre boutique de sport en ligne</p>
+    </header>
 
-  <!-- ==============================
-       NAV — Barre de navigation
-       ============================== -->
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="produits.html">Produits</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Produits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <!-- ==============================
-       CONTENU PRINCIPAL
-       Division container principale
-       ============================== -->
-  <div class="container">
+    <div class="container">
 
-    <!-- Carte/formulaire de contact avec style dédié -->
-    <div class="contact-form">
+        <h2>Envoyez-nous un message</h2>
 
-      <!-- Titre de la section -->
-      <h2>Envoyez-nous un message</h2>
+        <form>
 
-      <!-- ==============================
-           FORMULAIRE DE CONTACT
-           Tous les champs sont required
-           (obligatoires)
-           ============================== -->
-      <form id="formulaireContact" novalidate>
+            <input type="text"
+                   placeholder="Nom complet"
+                   required>
 
-        <!-- Champ : Nom complet -->
-        <label for="nom">Nom complet</label>
-        <input
-          type="text"
-          id="nom"
-          name="nom"
-          placeholder="Entrez votre nom complet"
-          required
-        />
+            <input type="email"
+                   placeholder="Adresse email"
+                   required>
 
-        <!-- Champ : Adresse email -->
-        <label for="email">Adresse email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="exemple@email.com"
-          required
-        />
+            <textarea rows="6"
+                      placeholder="Message"
+                      required></textarea>
 
-        <!-- Champ : Message (zone de texte de 6 lignes) -->
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="Écrivez votre message ici..."
-          required
-        ></textarea>
+            <button type="submit">Envoyer</button>
 
-        <!-- Boutons : Envoyer et Annuler -->
-        <div class="btn-group">
-          <!-- Bouton Envoyer : déclenche la fonction envoyerMessage() -->
-          <button type="submit" onclick="envoyerMessage(event)">Envoyer</button>
-          <!-- Bouton Annuler : déclenche la fonction annulerFormulaire() -->
-          <button type="button" class="btn-annuler" onclick="annulerFormulaire()">Annuler</button>
-        </div>
+            <button type="reset">Annuler</button>
 
-        <!-- Zone d'affichage des messages de retour (succès / erreur) -->
-        <p id="messageRetour" style="margin-top:14px;font-weight:600;text-align:center;"></p>
+        </form>
 
-      </form>
+    </div>
 
-    </div><!-- fin .contact-form -->
-
-  </div><!-- fin .container -->
-
-  <!-- ==============================
-       FOOTER — Pied de page commun
-       ============================== -->
-  <footer>
-    <p>&copy; 2026 ZoneSport. Tous droits réservés</p>
-  </footer>
-
-  <!-- Lien vers le fichier JavaScript -->
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2026 ZoneSport. Tous droits réservés</p>
+    </footer>
 
 </body>
 </html>
