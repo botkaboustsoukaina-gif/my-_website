@@ -1,0 +1,379 @@
+/* ============================================
+   ZONESPORT - Feuille de style globale
+   Fichier : style.css
+   Lié à : index.html, produits.html, contact.html
+   ============================================ */
+
+/* ---------- Import de la police Google ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap');
+
+/* ---------- Variables CSS globales ---------- */
+:root {
+  --noir: #111;
+  --gris-fonce: #222;
+  --gris-clair: #f5f5f5;
+  --blanc: #fff;
+  --accent: #e63946;        /* Rouge sport pour les accents */
+  --ombre: 0 4px 16px rgba(0,0,0,0.10);
+  --bordure-grise: 1px solid #ddd;
+  --rayon: 8px;
+}
+
+/* ============================================
+   RESET & BODY
+   ============================================ */
+* {
+  box-sizing: border-box;  /* Inclut padding/border dans la largeur */
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif; /* Police principale */
+  margin: 0;                               /* Suppression des marges par défaut */
+  padding: 0;
+  background-color: var(--gris-clair);     /* Fond gris clair #f5f5f5 */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  background-color: var(--noir);   /* Fond noir #111 */
+  color: var(--blanc);              /* Texte blanc */
+  text-align: center;               /* Contenu centré */
+  padding: 20px;                    /* Espacement intérieur 20px */
+}
+
+header h1 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  margin: 0 0 6px 0;
+  color: var(--blanc);
+}
+
+header p {
+  margin: 0;
+  font-size: 1rem;
+  color: #aaa;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   NAV — Barre de navigation
+   ============================================ */
+nav {
+  background-color: var(--gris-fonce);  /* Fond gris foncé #222 */
+  text-align: center;                    /* Liens centrés */
+  padding: 10px;                         /* Espacement intérieur 10px */
+}
+
+/* ---------- Liens du menu ---------- */
+nav a {
+  color: var(--blanc);           /* Couleur blanche */
+  text-decoration: none;         /* Suppression du soulignement */
+  margin: 0 18px;                /* Espace horizontal entre les liens */
+  font-weight: bold;             /* Texte en gras */
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+/* Effet au survol */
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ============================================
+   HERO — Section d'accueil (index.html)
+   ============================================ */
+.hero {
+  background-image: url('IMAGES/cycling.jpg');   /* Image de fond */
+  background-size: cover;                         /* L'image couvre toute la division */
+  background-position: center;                    /* Image centrée */
+  height: 400px;                                  /* Hauteur 400px */
+  display: flex;                                  /* Centrage horizontal & vertical */
+  align-items: center;
+  justify-content: center;
+  color: var(--blanc);                            /* Texte blanc */
+  text-align: center;                             /* Texte centré */
+}
+
+/* ---------- Titre dans le hero ---------- */
+.hero h1 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 50px;                                /* Taille 50px */
+  background-color: rgba(0, 0, 0, 0.55);         /* Fond noir transparent */
+  padding: 18px 36px;                             /* Espace intérieur */
+  border-radius: 10px;                            /* Coins arrondis */
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* ============================================
+   SECTION — Contenu principal
+   ============================================ */
+section {
+  padding: 40px;         /* Espacement intérieur 40px */
+  text-align: center;    /* Contenu centré */
+  flex: 1;
+}
+
+section h2 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+}
+
+/* ============================================
+   H2 — Titres de section
+   ============================================ */
+h2 {
+  margin-top: 40px;      /* Marge supérieure 40px */
+  color: var(--noir);    /* Couleur noir #111 */
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+/* ============================================
+   UL — Listes non ordonnées
+   ============================================ */
+ul {
+  text-align: left;           /* Texte aligné à gauche */
+  width: 70%;                 /* Largeur 70% */
+  margin: 0 auto;             /* Liste centrée */
+  line-height: 2;             /* Espacement entre les lignes */
+  list-style-type: square;    /* Puces carrées */
+  padding-left: 24px;
+}
+
+ul li {
+  padding: 2px 0;
+  font-size: 0.97rem;
+}
+
+/* ============================================
+   .CONTAINER — Div principale des pages
+   ============================================ */
+.container {
+  width: 90%;          /* Largeur 90% */
+  margin: 0 auto;      /* Centré horizontalement */
+  padding: 30px 0 50px;
+}
+
+/* ============================================
+   TABLE — Tableaux des produits
+   ============================================ */
+table {
+  width: 100%;                                   /* Largeur 100% */
+  border-collapse: collapse;                      /* Fusion des bordures */
+  margin-top: 16px;                              /* Marge supérieure */
+  background-color: var(--blanc);               /* Fond blanc */
+  box-shadow: var(--ombre);                      /* Légère ombre */
+  border-radius: var(--rayon);
+  overflow: hidden;
+}
+
+/* ---------- Cellules th et td ---------- */
+th, td {
+  border: var(--bordure-grise);   /* Bordure grise claire */
+  padding: 12px;                   /* Espacement intérieur 12px */
+  text-align: center;              /* Texte centré */
+  font-size: 0.93rem;
+}
+
+/* ---------- En-têtes de tableau ---------- */
+th {
+  background-color: var(--noir);   /* Fond noir #111 */
+  color: var(--blanc);             /* Texte blanc */
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Alternance de couleur des lignes */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ============================================
+   BUTTON — Boutons
+   ============================================ */
+button {
+  background-color: var(--noir);   /* Fond noir #111 */
+  color: var(--blanc);             /* Texte blanc */
+  border: none;                    /* Suppression de la bordure */
+  padding: 8px 16px;               /* Espace intérieur */
+  border-radius: 6px;              /* Coins arrondis */
+  cursor: pointer;                 /* Curseur pointeur */
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: var(--accent);  /* Rouge au survol */
+  transform: scale(1.04);
+}
+
+/* Bouton Annuler (style différent) */
+button.btn-annuler {
+  background-color: #666;
+  margin-left: 10px;
+}
+
+button.btn-annuler:hover {
+  background-color: #444;
+}
+
+/* ============================================
+   INPUT & TEXTAREA — Formulaire de contact
+   ============================================ */
+input, textarea {
+  width: 100%;                    /* Largeur 100% */
+  padding: 12px;                  /* Espacement intérieur 12px */
+  margin: 10px 0;                 /* Espace au-dessus et au-dessous */
+  border: var(--bordure-grise);   /* Bordure grise claire */
+  border-radius: var(--rayon);    /* Coins arrondis */
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 0.95rem;
+  background: var(--blanc);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+/* Effet focus sur les champs */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--noir);
+  box-shadow: 0 0 0 2px rgba(17,17,17,0.12);
+}
+
+/* ============================================
+   FOOTER — Pied de page
+   ============================================ */
+footer {
+  background-color: var(--noir);   /* Fond noir #111 */
+  color: var(--blanc);             /* Texte blanc */
+  text-align: center;              /* Texte centré */
+  padding: 20px;                   /* Espace intérieur */
+  margin-top: 40px;                /* Marge supérieure 40px */
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   LABELS DE DISPONIBILITÉ (bonus visuel)
+   ============================================ */
+.dispo {
+  color: #2a9d2a;
+  font-weight: 600;
+}
+
+.non-dispo {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.peu-dispo {
+  color: #e07c00;
+  font-weight: 600;
+}
+
+/* ============================================
+   TITRES H3 dans les sections
+   ============================================ */
+h3 {
+  color: var(--noir);
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  text-align: left;
+}
+
+/* ============================================
+   FORMULAIRE de contact — mise en forme
+   ============================================ */
+.contact-form {
+  background: var(--blanc);
+  padding: 36px 40px;
+  border-radius: 12px;
+  box-shadow: var(--ombre);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gris-fonce);
+  display: block;
+  margin-top: 8px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+/* ============================================
+   RESPONSIVE — Adaptation mobile
+   ============================================ */
+@media (max-width: 768px) {
+  nav a {
+    margin: 0 8px;
+    font-size: 0.82rem;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  ul {
+    width: 95%;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  table {
+    font-size: 0.82rem;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+  }
+}
