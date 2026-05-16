@@ -1,196 +1,155 @@
 <!DOCTYPE html>
-<!-- Langue définie en français -->
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Titre de la page Produits -->
-  <title>ZoneSport - Produits</title>
-  <!-- Lien vers le fichier CSS externe unique -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoneSport - Produits</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-  <!-- ==============================
-       HEADER — En-tête commun
-       ============================== -->
-  <header>
-    <h1>ZoneSport</h1>
-    <p>Votre boutique de sport en ligne</p>
-  </header>
+    <header>
+        <h1>ZoneSport</h1>
+        <p>Votre boutique de sport en ligne</p>
+    </header>
 
-  <!-- ==============================
-       NAV — Barre de navigation
-       ============================== -->
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="produits.html">Produits</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Produits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <!-- ==============================
-       CONTENU PRINCIPAL
-       Division container principale
-       ============================== -->
-  <div class="container">
+    <div class="container">
 
-    <!-- ========================
-         CATÉGORIE : FOOTBALL
-         ======================== -->
-    <h3>Football</h3>
+        <h2>Catégorie Football</h2>
 
-    <!-- Tableau HTML de la catégorie Football -->
-    <!-- Colonnes : Produit | Prix | Disponibilité | Action -->
-    <table>
-      <thead>
-        <tr>
-          <th>Produit</th>
-          <th>Prix</th>
-          <th>Disponibilité</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Ligne 1 : Ballon de football -->
-        <tr>
-          <td>Ballon de football</td>
-          <td>350 DH</td>
-          <!-- Classe CSS "dispo" pour colorer en vert -->
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Ballon de football')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 2 : Chaussures de football -->
-        <tr>
-          <td>Chaussures de football</td>
-          <td>900 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Chaussures de football')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 3 : Gants de gardien (non disponible) -->
-        <tr>
-          <td>Gants de gardien</td>
-          <td>280 DH</td>
-          <!-- Classe CSS "non-dispo" pour colorer en rouge -->
-          <td><span class="non-dispo">Non Disponible</span></td>
-          <!-- Bouton désactivé si non disponible -->
-          <td><button disabled style="opacity:0.4;cursor:not-allowed;">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 4 : Maillot de football -->
-        <tr>
-          <td>Maillot de football</td>
-          <td>400 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Maillot de football')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 5 : Protège tibias -->
-        <tr>
-          <td>Protège tibias</td>
-          <td>180 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Protège tibias')">Ajouter au panier</button></td>
-        </tr>
-      </tbody>
-    </table>
+        <table>
 
-    <!-- ========================
-         CATÉGORIE : FITNESS
-         ======================== -->
-    <h3>Fitness</h3>
+            <tr>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Disponibilité</th>
+                <th>Action</th>
+            </tr>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Produit</th>
-          <th>Prix</th>
-          <th>Disponibilité</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Ligne 1 : Haltères -->
-        <tr>
-          <td>Haltères</td>
-          <td>759 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Haltères')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 2 : Tapis de yoga (stock limité) -->
-        <tr>
-          <td>Tapis de yoga</td>
-          <td>220 DH</td>
-          <!-- Classe CSS "peu-dispo" pour colorer en orange -->
-          <td><span class="peu-dispo">2 Articles Restant</span></td>
-          <td><button onclick="ajouterPanier('Tapis de yoga')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 3 : Bandes élastiques (non disponible) -->
-        <tr>
-          <td>Bandes élastiques</td>
-          <td>150 DH</td>
-          <td><span class="non-dispo">Non Disponible</span></td>
-          <td><button disabled style="opacity:0.4;cursor:not-allowed;">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 4 : Tapis de course -->
-        <tr>
-          <td>Tapis de course</td>
-          <td>4 500 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Tapis de course')">Ajouter au panier</button></td>
-        </tr>
-      </tbody>
-    </table>
+            <tr>
+                <td>Ballon de football</td>
+                <td>350 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
 
-    <!-- ========================
-         CATÉGORIE : BASKETBALL
-         ======================== -->
-    <h3>Basketball</h3>
+            <tr>
+                <td>Chaussures de football</td>
+                <td>900 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Produit</th>
-          <th>Prix</th>
-          <th>Disponibilité</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Ligne 1 : Chaussures de basketball (stock limité) -->
-        <tr>
-          <td>Chaussures de basketball</td>
-          <td>950 DH</td>
-          <td><span class="peu-dispo">3 Articles Restants</span></td>
-          <td><button onclick="ajouterPanier('Chaussures de basketball')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 2 : Maillot de basketball -->
-        <tr>
-          <td>Maillot de basketball</td>
-          <td>450 DH</td>
-          <td><span class="dispo">Disponible</span></td>
-          <td><button onclick="ajouterPanier('Maillot de basketball')">Ajouter au panier</button></td>
-        </tr>
-        <!-- Ligne 3 : Panier de basketball (non disponible) -->
-        <tr>
-          <td>Panier de basketball</td>
-          <td>1 200 DH</td>
-          <td><span class="non-dispo">Non Disponible</span></td>
-          <td><button disabled style="opacity:0.4;cursor:not-allowed;">Ajouter au panier</button></td>
-        </tr>
-      </tbody>
-    </table>
+            <tr>
+                <td>Gants de gardien</td>
+                <td>280 DH</td>
+                <td>Non Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
 
-  </div><!-- fin .container -->
+            <tr>
+                <td>Maillot de football</td>
+                <td>400 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
 
-  <!-- ==============================
-       FOOTER — Pied de page commun
-       ============================== -->
-  <footer>
-    <p>&copy; 2026 ZoneSport. Tous droits réservés</p>
-  </footer>
+            <tr>
+                <td>Protège tibias</td>
+                <td>180 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
 
-  <!-- Lien vers le fichier JavaScript -->
-  <script src="script.js"></script>
+        </table>
+
+        <h2>Catégorie Fitness</h2>
+
+        <table>
+
+            <tr>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Disponibilité</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Haltères</td>
+                <td>750 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+            <tr>
+                <td>Tapis de yoga</td>
+                <td>220 DH</td>
+                <td>2 Articles Restants</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+            <tr>
+                <td>Bandes élastiques</td>
+                <td>150 DH</td>
+                <td>Non Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+            <tr>
+                <td>Tapis de course</td>
+                <td>4500 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+        </table>
+
+        <h2>Catégorie Basketball</h2>
+
+        <table>
+
+            <tr>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Disponibilité</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Chaussures de basketball</td>
+                <td>950 DH</td>
+                <td>3 Articles Restants</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+            <tr>
+                <td>Maillot de basketball</td>
+                <td>450 DH</td>
+                <td>Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+            <tr>
+                <td>Panier de basketball</td>
+                <td>1200 DH</td>
+                <td>Non Disponible</td>
+                <td><button>Ajouter au panier</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <footer>
+        <p>© 2026 ZoneSport. Tous droits réservés</p>
+    </footer>
 
 </body>
 </html>
