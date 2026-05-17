@@ -1,142 +1,111 @@
 body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
 }
-
-/* HEADER */
 
 header {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-/* NAVIGATION */
-
 nav {
-    background-color: #222;
-    text-align: center;
-    padding: 10px;
+  background-color: #222;
+  text-align: center;
+  padding: 10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
-/* HERO SECTION */
-
 .hero {
-    background-image: url("IMAGES/cycling.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    text-align: center;
+  background-image: url('IMAGES/cycling.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .hero h1 {
-    font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+  font-size: 50px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px;
+  border-radius: 10px;
 }
-
-/* SECTION */
 
 section {
-    padding: 40px;
-    text-align: center;
+  padding: 40px;
+  text-align: center;
 }
-
-/* CONTAINER */
 
 .container {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
+  width: 90%;
+  margin: auto;
 }
-
-/* TITRES */
 
 h2 {
-    margin-top: 40px;
-    color: #111;
+  margin-top: 40px;
+  color: #111;
 }
-
-/* LISTES */
 
 ul {
-    text-align: left;
-    width: 70%;
-    margin: auto;
-    line-height: 2;
-    list-style-type: square;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  line-height: 2;
+  list-style-type: square;
 }
-
-/* TABLEAUX */
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 0 5px gray;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
 }
 
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: center;
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
 }
 
 th {
-    background-color: #111;
-    color: white;
+  background-color: #111;
+  color: white;
 }
-
-/* BOUTONS */
 
 button {
-    background-color: #111;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* FORMULAIRE */
-
-form {
-    width: 60%;
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-
-/* FOOTER */
 
 footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}   ha lcode li dayra
